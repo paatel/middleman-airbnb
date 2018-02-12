@@ -8,13 +8,13 @@ title: Le Wagon - Middleman - About
     <ul class="list-inline">
       <% data.users.each do |user| %>
         <li>
-          <% link_to "https://kitt.lewagon.com/alumni/#{theoavoyne}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{theoavoyne}", class: "img-circle" %>
+          <% link_to "https://kitt.lewagon.com/alumni/#{{user.github_theoavoyne}", target: "_blank" do %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{{user.github_theoavoyne}", class: "img-circle" %>
           <% end %>
           <h2><%= user.name %></h2>
           <p>
-            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
-              <i class="fa fa-github"></i> <%= user.github_nickname %>
+            <% link_to "https://github.com/#{user.github_theoavoyne}", target: "_blank" do %>
+              <i class="fa fa-github"></i> <%= user.github_theoavoyne %>
             <% end %>
           </p>
         </li>
